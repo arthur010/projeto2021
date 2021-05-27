@@ -1,0 +1,21 @@
+{
+    "item":[
+        {
+           "id": 1,
+           "imagem":"",
+           "atividade":"flexão",
+           "quantidade":"10",
+           "local":"Academia"
+        },
+
+        {
+            "id":2,
+            "imagem":"",
+            "atividade":"abdominal",
+            "quantidade":"10",
+            "local":"Academia"
+        }
+
+    ]
+}
+

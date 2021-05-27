@@ -1,17 +1,24 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
     <ion-title>
-      Tab 2
+      Historico de atividades
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let dados of item">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-thumnail slot ="start">
+      <ion-img [src]="dados.imagem"></ion-img>
+    </ion-thumnail>
+    <p>{{ dados.atividade }}</p>
+  </ion-item> 
+ 
+
+</ion-list>
 </ion-content>

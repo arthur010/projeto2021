@@ -1,0 +1,16 @@
+{
+  "item": [
+    {
+      "id": 1,
+      "atividade": "flexao",
+      "quantidade": "10",
+      "local": "Academia"
+    },
+    {
+      "id": 2,
+      "atividade": "abdominal",
+      "quantidade": "10",
+      "local": "Academia"
+    }
+  ]
+}
