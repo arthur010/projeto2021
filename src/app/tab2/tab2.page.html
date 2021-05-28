@@ -10,15 +10,20 @@
 </ion-header>
 
 <ion-content>
+
+<ion-item>
+  <ion-text><h1>Historico de atividades</h1></ion-text>
+</ion-item>
+
 <ion-list>
   <ion-item *ngFor="let dados of item">
-
-    <ion-thumnail slot ="start">
-      <ion-img [src]="dados.imagem"></ion-img>
-    </ion-thumnail>
-    <p>{{ dados.atividade }}</p>
-  </ion-item> 
+<ion-label>{{dados.id}}</ion-label>
+<ion-label>{{dados.Atividade}}</ion-label>
+<ion-label>{{dados.Quantidade}}</ion-label>
  
+<ion-button color="success">Editar</ion-button>
+<ion-button (click)="onDelete(dados)" color="danger">Deletar</ion-button>
 
+</ion-item> 
 </ion-list>
 </ion-content>

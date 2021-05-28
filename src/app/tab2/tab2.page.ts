@@ -18,6 +18,10 @@ item: atividade[] = [];
     this.http
     .get<atividade[]>('http://localhost:3000/item')
     .subscribe(results => this.item = results);
+  };
+
+  onDelete(dados) {
+    this.http.delete('http://localhost:3000/item')
   }
 
 

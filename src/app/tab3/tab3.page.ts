@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class Tab3Page implements OnInit {
 
   httpOptions = {
-    headers = new HttpHeaders ({'Content-Type' : 'application/json'})
+    headers: new HttpHeaders ({'Content-Type' : 'application/json'})
   }
 
   constructor(private http: HttpClient) {}
