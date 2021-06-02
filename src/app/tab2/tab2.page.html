@@ -11,9 +11,6 @@
 
 <ion-content>
 
-<ion-item>
-  <ion-text><h1>Historico de atividades</h1></ion-text>
-</ion-item>
 
 <ion-list>
   <ion-item *ngFor="let dados of item">
@@ -21,8 +18,14 @@
 <ion-label>{{dados.Atividade}}</ion-label>
 <ion-label>{{dados.Quantidade}}</ion-label>
  
-<ion-button color="success">Editar</ion-button>
-<ion-button (click)="onDelete(dados)" color="danger">Deletar</ion-button>
+<ion-button color="success" routerLink="/tab4">Editar</ion-button>
+<ion-button (click)="onDelete(dados.id)" color="danger">Deletar</ion-button>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button routerLink="/tab3">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
 
 </ion-item> 
 </ion-list>
